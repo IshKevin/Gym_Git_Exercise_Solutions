@@ -150,4 +150,15 @@ Dropped stash@{0} (4f2dba8fc17e59902270b067bd1245b6abeb997b)
 
 HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
 $ git reset HEAD~
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git commit -m"back to orig"
+[main 9102266] back to orig
+ 4 files changed, 117 insertions(+)
+ create mode 100644 about.js
+ create mode 100644 home.htm
+ create mode 100644 team.js
+
 ```
