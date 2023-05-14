@@ -162,3 +162,54 @@ $ git commit -m"back to orig"
  create mode 100644 team.js
 
 ```
+### Exercise 3
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/bundle-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 621 bytes | 0 bytes/s, done.
+From https://github.com/IshKevin/Gym_Git_Exercise_Solutions
+   9c9f80b..a73115b  main       -> origin/main
+Updating 9c9f80b..a73115b
+Fast-forward
+ service.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 service.html
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git add service.html
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git commit -m"fix service in sev-red"
+[ft/service-redesign c3f61c6] fix service in sev-red
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 160.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+```
