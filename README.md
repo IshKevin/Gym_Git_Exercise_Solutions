@@ -643,3 +643,42 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/IshKevin/git-cafe-exercise.git
    d1d3f9c..53bb82c  main -> main
 ```
+
+## Bundel 6
+### Exercise 1
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (feature/menu-page)
+$ git checkout -b bugfix/contact-title
+Switched to a new branch 'bugfix/contact-title'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git commit -m"fix index 4 title to contact "
+[bugfix/contact-title 8e3bda4] fix index 4 title to contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git push origin bugfix/contact-title
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bugfix/contact-title' on GitHub by visiting:
+remote:      https://github.com/IshKevin/git-cafe-exercise/pull/new/bugfix/contact-title
+remote:
+To https://github.com/IshKevin/git-cafe-exercise.git
+ * [new branch]      bugfix/contact-title -> bugfix/contact-title
+```
