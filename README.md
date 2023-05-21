@@ -213,3 +213,180 @@ To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
 branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
 
 ```
+## Bundel 3
+### Exercise 1
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git add team.html
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git commit -m "Add changes to team.html"
+[ft/team-page 6eb37a3] Add changes to team.html
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push origin ft/team-page
+fatal: unable to access 'https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git/': Could not resolve host: github.com
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 458 bytes | 229.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+M       README.md
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git log
+commit 6eb37a3076f5ff570ec14276d9decec6c9c27d14 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 21 09:51:21 2023 +0200
+
+    Add changes to team.html
+
+commit 44c3dd789615b463a75e8950caf4b0bc1f62282b (origin/main, main, ft/contact-page)
+Merge: 9a78f9c 0f33901
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 14 16:06:39 2023 +0200
+
+    Merge branch 'main' of https://github.com/IshKevin/Gym_Git_Exercise_Solutions
+
+commit 9a78f9cab27c05b4dd4ccd9eadaec18e4d4f148a
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 14 16:06:28 2023 +0200
+
+    add work on readme
+
+commit 0f3390128d5d241ff7c835f2cb9329434a269f31
+:
+commit 6eb37a3076f5ff570ec14276d9decec6c9c27d14 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 21 09:51:21 2023 +0200
+
+    Add changes to team.html
+
+commit 44c3dd789615b463a75e8950caf4b0bc1f62282b (origin/main, main, ft/contact-page)
+Merge: 9a78f9c 0f33901
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 14 16:06:39 2023 +0200
+
+    Merge branch 'main' of https://github.com/IshKevin/Gym_Git_Exercise_Solutions
+
+commit 9a78f9cab27c05b4dd4ccd9eadaec18e4d4f148a
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 14 16:06:28 2023 +0200
+
+    add work on readme
+
+commit 0f3390128d5d241ff7c835f2cb9329434a269f31
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+M       README.md
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git cherry-pick 6eb37a3076f5ff570ec14276d9decec6c9c27d14
+[ft/contact-page afc2756] Add changes to team.html
+ Date: Sun May 21 09:51:21 2023 +0200
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git commit -m "Add changes to contact page"
+[ft/contact-page f885ec5] Add changes to contact page
+ 1 file changed, 5 insertions(+)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 898 bytes | 449.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git log
+commit 6eb37a3076f5ff570ec14276d9decec6c9c27d14 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 21 09:51:21 2023 +0200
+
+    Add changes to team.html
+
+commit 44c3dd789615b463a75e8950caf4b0bc1f62282b (origin/main, main)
+Merge: 9a78f9c 0f33901
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 14 16:06:39 2023 +0200
+
+    Merge branch 'main' of https://github.com/IshKevin/Gym_Git_Exercise_Solutions
+
+commit 9a78f9cab27c05b4dd4ccd9eadaec18e4d4f148a
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 14 16:06:28 2023 +0200
+
+    add work on readme
+
+commit 0f3390128d5d241ff7c835f2cb9329434a269f31
+Merge: a73115b c3f61c6
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git revert  6eb37a3076f5ff570ec14276d9decec6c9c27d14
+[ft/team-page 67ffcfb] Revert "Add changes to team.html"
+ 1 file changed, 14 deletions(-)
+ delete mode 100644 team.html
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 260 bytes | 260.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+   6eb37a3..67ffcfb  ft/team-page -> ft/team-page
+```
