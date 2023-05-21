@@ -527,3 +527,79 @@ To https://github.com/IshKevin/The-gym_II.git
  * [new branch]      main -> main
 
 ```
+### Exercise 2
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git commit -m"new changes"
+[ft/footer 7906605] new changes
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git commit -m"update footer"
+[ft/footer 8345ebc] update footer
+ 1 file changed, 1 insertion(+)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 589 bytes | 589.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/footer
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 8e4cb27..8345ebc
+Fast-forward
+Squash commit -- not updating HEAD
+ home.htm | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git commit -m" squashing"
+[ft/squashing 2acdf47]  squashing
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+```
