@@ -377,16 +377,3 @@ $ git revert  6eb37a3076f5ff570ec14276d9decec6c9c27d14
 [ft/team-page 67ffcfb] Revert "Add changes to team.html"
  1 file changed, 14 deletions(-)
  delete mode 100644 team.html
-
-HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/team-page)
-$ git push origin ft/team-page
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 260 bytes | 260.00 KiB/s, done.
-Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
-   6eb37a3..67ffcfb  ft/team-page -> ft/team-page
-```
