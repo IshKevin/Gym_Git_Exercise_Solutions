@@ -682,3 +682,44 @@ remote:
 To https://github.com/IshKevin/git-cafe-exercise.git
  * [new branch]      bugfix/contact-title -> bugfix/contact-title
 ```
+### Exercise 2
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git checkout -b hotfix/number
+Switched to a new branch 'hotfix/number'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git status
+On branch hotfix/number
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git commit -m" fix bug contact"
+[hotfix/number 206b28d]  fix bug contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git push origin hotfix/number
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'hotfix/number' on GitHub by visiting:
+remote:      https://github.com/IshKevin/git-cafe-exercise/pull/new/hotfix/number
+remote:
+To https://github.com/IshKevin/git-cafe-exercise.git
+ * [new branch]      hotfix/number -> hotfix/number
+
+```
