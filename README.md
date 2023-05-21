@@ -483,3 +483,47 @@ To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 
 ```
+## Bundel 4
+### Exercise 1
+```bash
+  HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git remote add git-copy https://github.com/IshKevin/The-gym_II.git
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git commit -m "Make changes to home page"
+[main df4b3b8] Make changes to home page
+ 1 file changed, 1 insertion(+)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+   cd6fc3a..df4b3b8  main -> main
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git push git-copy main
+Enumerating objects: 75, done.
+Counting objects: 100% (75/75), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (65/65), done.
+Writing objects: 100% (75/75), 11.88 KiB | 715.00 KiB/s, done.
+Total 75 (delta 33), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (33/33), done.
+To https://github.com/IshKevin/The-gym_II.git
+ * [new branch]      main -> main
+
+```
