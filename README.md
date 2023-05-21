@@ -377,3 +377,109 @@ $ git revert  6eb37a3076f5ff570ec14276d9decec6c9c27d14
 [ft/team-page 67ffcfb] Revert "Add changes to team.html"
  1 file changed, 14 deletions(-)
  delete mode 100644 team.html
+```
+### Exercise 2
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/faq-page
+error: pathspec 'ft/faq-page' did not match any file(s) known to git
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/service-redesign
+  ft/team-page
+* main
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git commit -m"changes in main"
+[main 0c95da8] changes in main
+ 2 files changed, 2 insertions(+)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+   f37cd91..0c95da8  main -> main
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git log
+commit f37cd91994394b8926818fa962c92853e227b2d1 (HEAD -> ft/home-page-redesign, ft/faq-page)
+Merge: 4c199d7 52391d3
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 21 10:12:25 2023 +0200
+
+    Merge branch 'main' of https://github.com/IshKevin/Gym_Git_Exercise_Solutions
+
+commit 4c199d7cfbb652a5aad21f73d94fa46c7c409284
+Author: IshKevin <carterk279@gmail.com>
+Date:   Sun May 21 10:10:48 2023 +0200
+
+    update readme
+
+commit 52391d35a257babd093a2f766cb1f2721a43e6da
+Merge: fea8a5e f885ec5
+Author: Kevin <85410979+IshKevin@users.noreply.github.com>
+Date:   Sun May 21 10:04:29 2023 +0200
+
+    Merge pull request #4 from IshKevin/ft/contact-page
+
+    Ft/contact page
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git commit -m"change home after rebase"
+[ft/home-page-redesign 24c7455] change home after rebase
+ 1 file changed, 1 insertion(+)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+```
