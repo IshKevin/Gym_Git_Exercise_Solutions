@@ -527,3 +527,199 @@ To https://github.com/IshKevin/The-gym_II.git
  * [new branch]      main -> main
 
 ```
+### Exercise 2
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git commit -m"new changes"
+[ft/footer 7906605] new changes
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git commit -m"update footer"
+[ft/footer 8345ebc] update footer
+ 1 file changed, 1 insertion(+)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 589 bytes | 589.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/footer
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git merge --squash ft/footer
+Updating 8e4cb27..8345ebc
+Fast-forward
+Squash commit -- not updating HEAD
+ home.htm | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git commit -m" squashing"
+[ft/squashing 2acdf47]  squashing
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/Gym_Git_Exercise_Solutions (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/IshKevin/Gym_Git_Exercise_Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/IshKevin/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+```
+## Bundel 5
+### Exercise 2
+```bash
+ HP@KEVIN MINGW64 ~/Documents/web tech
+$ git clone https://github.com/IshKevin/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 95
+Receiving objects: 100% (107/107), 1.95 MiB | 383.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+HP@KEVIN MINGW64 ~/Documents/web tech
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@KEVIN MINGW64 ~/Documents/web tech
+$ cd git-cafe-exercise
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (main)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (main)
+$ git commit -m"fix home page"
+[main 53bb82c] fix home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 315 bytes | 157.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/IshKevin/git-cafe-exercise.git
+   d1d3f9c..53bb82c  main -> main
+```
+
+## Bundel 6
+### Exercise 1
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (feature/menu-page)
+$ git checkout -b bugfix/contact-title
+Switched to a new branch 'bugfix/contact-title'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git commit -m"fix index 4 title to contact "
+[bugfix/contact-title 8e3bda4] fix index 4 title to contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git push origin bugfix/contact-title
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bugfix/contact-title' on GitHub by visiting:
+remote:      https://github.com/IshKevin/git-cafe-exercise/pull/new/bugfix/contact-title
+remote:
+To https://github.com/IshKevin/git-cafe-exercise.git
+ * [new branch]      bugfix/contact-title -> bugfix/contact-title
+```
+### Exercise 2
+```bash
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (bugfix/contact-title)
+$ git checkout -b hotfix/number
+Switched to a new branch 'hotfix/number'
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git status
+On branch hotfix/number
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git add .
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git commit -m" fix bug contact"
+[hotfix/number 206b28d]  fix bug contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@KEVIN MINGW64 ~/Documents/web tech/git-cafe-exercise (hotfix/number)
+$ git push origin hotfix/number
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'hotfix/number' on GitHub by visiting:
+remote:      https://github.com/IshKevin/git-cafe-exercise/pull/new/hotfix/number
+remote:
+To https://github.com/IshKevin/git-cafe-exercise.git
+ * [new branch]      hotfix/number -> hotfix/number
+
+```
